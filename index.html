@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Resume - Lokesh Sardana</title>
-	<!--<style>
+	<style>
 		#resumeFrame {
 			border: none;
 			position: absolute;
@@ -14,22 +14,9 @@
 			width: 100%;
 		}
 
-	</style>-->
-	<script src="jquery-1.11.2.min.js"></script>
-	<script>
-		var pdfUrl = "web/viewer.html?file=../resume.pdf";
-		$(document).ready(function() {
-			$.ajax({
-				url: pdfUrl,
-				success: function(data) {
-					$('#pdfContainer').html(data);
-				}
-			});
-		});
-	</script>
+	</style>
 </head>
 <body>
-	<div id="pdfContainer" style="height:100%;width:100%"></div>
-	<!--<iframe id="resumeFrame" src="web/viewer.html?file=../resume.pdf" scrolling="no" height="100%" width="100%"></iframe>-->
+	<iframe id="resumeFrame" src="web/viewer.html?file=../resume.pdf" scrolling="no" height="100%" width="100%"></iframe>
 </body>
 </html>
